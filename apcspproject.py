@@ -1,5 +1,5 @@
 import turtle as trtl
-x= trtl.Turtle()
+x = trtl.Turtle()
 
 # background of image
 x.penup()
@@ -133,7 +133,7 @@ x.penup()
 for step in range(6):
     x.goto(-260, 10)
     x.setheading(step * 60)
-    x.forward(40)        # distance from center
+    x.forward(40)       
     x.pendown()
     x.fillcolor("#43DF3E")
     x.begin_fill()
@@ -181,7 +181,7 @@ for step in range(50):
         ht.backward(9)
         
 
-        if step ==0:
+        if step == 0:
            collision_shape = turtle_shapes.pop() if turtle_shapes else "classic"
            collision_color = "yellow"
 
@@ -241,6 +241,7 @@ if answer == "no":
 
 wn = trtl.Screen()
 wn.mainloop()
+
 
 
 
