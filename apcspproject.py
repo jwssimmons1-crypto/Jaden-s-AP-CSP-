@@ -1,7 +1,7 @@
 import turtle as trtl
 x= trtl.Turtle()
 
-# create background of image
+# background of image
 x.penup()
 x.goto(-510,430)
 x.speed(0)
@@ -14,7 +14,7 @@ for step in range(4):
 x.end_fill()
 
 
-# create base of house
+# base of house
 x.penup()
 x.goto(0,-200)
 x.begin_fill()
@@ -27,7 +27,7 @@ x.left(90)
 x.forward(300)
 x.end_fill()
 
-# create roof of house
+# roof of house
 x.penup()
 x.goto(0,0)
 x.begin_fill()
@@ -50,7 +50,7 @@ x.right(90)
 x.forward(282)
 x.end_fill()
 
-# create door of house
+# door of house
 x.penup()
 x.goto(175,-200)
 x.begin_fill()
@@ -64,7 +64,7 @@ x.left(90)
 x.forward(140)
 x.end_fill()
 
-# create circle window of house
+# circle window of house
 x.penup()
 x.goto(40, -85)
 x.begin_fill()
@@ -73,7 +73,7 @@ x.pendown()
 x.circle(30)
 x.end_fill()
 
-# create triangle window of house
+# triangle window of house
 x.penup()
 x.goto(260,-110)
 x.begin_fill()
@@ -85,7 +85,7 @@ for step in range(3):
     x.right(120)
 x.end_fill()
 
-# create chimney of house
+# chimney of house
 x.penup()
 x.goto(230,118)
 x.begin_fill()
@@ -99,7 +99,7 @@ x.right(90)
 x.forward(100)
 x.end_fill()
 
-# add grass to the ground
+# add green section to simulate grass
 x.penup()
 x.goto(-510,-200)
 x.begin_fill()
@@ -113,7 +113,7 @@ x.right(90)
 x.forward(1012)
 x.end_fill()
 
-# create tree trunk
+# tree trunk
 x.penup()
 x.goto(-280,-200)
 x.begin_fill()
@@ -127,7 +127,7 @@ x.right(90)
 x.forward(110)
 x.end_fill()
 
-# create tree leaves
+# tree leaves
 x.penup()
 x.goto(-260, 10)
 x.begin_fill()
@@ -142,7 +142,7 @@ for step in range(6):
     r = r + 60
 x.end_fill()
 
-# create cup on tree leaves
+# a cup on tree leaves
 x.penup()
 x.goto(-305, -20)
 x.begin_fill()
@@ -159,7 +159,7 @@ x.pendown()
 x.circle(50)
 x.end_fill()
 
-# create Sun 
+# Sun 
 
 horiz_turtles = [] 
 
@@ -187,7 +187,7 @@ for step in range(50):
            collision_shape = turtle_shapes.pop() if turtle_shapes else "classic"
            collision_color = "yellow"
 
-# create eyes on tree
+# eyes on tree
 user_name = input("What is your name? ")
 print("Hi", user_name)
 answer = input("Would you like to add some details to the tree? State 'yes' or 'no'. ")
@@ -215,7 +215,7 @@ if answer == "yes":
     if eyes == "no": 
         print("Ok I will not add eyes. Have a good day! ")
 
-# create smile/frown on tree
+# frown on tree
     expression = input("Do you want to add a frown? State 'frown' or 'no'. ")
     if expression == "frown":
         x.penup()
@@ -240,3 +240,4 @@ if answer == "no":
 
 wn = trtl.Screen()
 wn.mainloop()
+
