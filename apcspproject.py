@@ -192,7 +192,7 @@ answer = input("Would you like to add some details to the tree? State 'yes' or '
 if answer == "yes": 
     print("Ok", user_name, "let's get started")
     
-# eyes on tree
+# eyes on the cup
     eyes = input("Do you want to add eyes? State 'yes' or 'no'. ")
     if eyes == "yes":
         x.penup()
@@ -215,7 +215,7 @@ if answer == "yes":
     if eyes == "no": 
         print("Ok I will not add eyes. Have a good day! ")
 
-# frown on tree
+# frown on the cup
     expression = input("Do you want to add a frown? State 'frown' or 'no'. ")
     if expression == "frown":
         x.penup()
@@ -241,6 +241,7 @@ if answer == "no":
 
 wn = trtl.Screen()
 wn.mainloop()
+
 
 
 
