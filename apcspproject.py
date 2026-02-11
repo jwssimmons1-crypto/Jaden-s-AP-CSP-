@@ -13,7 +13,6 @@ for step in range(4):
     x.right(90)
 x.end_fill()
 
-
 # base of house
 x.penup()
 x.goto(0,-200)
@@ -160,7 +159,6 @@ x.circle(50)
 x.end_fill()
 
 # Sun 
-
 horiz_turtles = [] 
 
 turtle_shapes = ["circle"]
@@ -187,12 +185,14 @@ for step in range(50):
            collision_shape = turtle_shapes.pop() if turtle_shapes else "classic"
            collision_color = "yellow"
 
-# eyes on tree
+# ask user if they want to add details
 user_name = input("What is your name? ")
 print("Hi", user_name)
 answer = input("Would you like to add some details to the tree? State 'yes' or 'no'. ")
 if answer == "yes": 
     print("Ok", user_name, "let's get started")
+    
+# eyes on tree
     eyes = input("Do you want to add eyes? State 'yes' or 'no'. ")
     if eyes == "yes":
         x.penup()
@@ -231,7 +231,8 @@ if answer == "yes":
         x.goto(-1000,1000)
     if expression == "no":
         print("Ah dang alright. Byeeeee! ")
-
+        
+# end of program if user chooses to not add details
 if answer == "no":
     print("That's the end of the painting. Bye! ")
 
@@ -240,4 +241,5 @@ if answer == "no":
 
 wn = trtl.Screen()
 wn.mainloop()
+
 
