@@ -127,19 +127,19 @@ x.forward(110)
 x.end_fill()
 
 # tree leaves
-x.penup()
-x.goto(-260, 10)
-x.begin_fill()
-x.fillcolor("#1CD41F")
-x.pendown()
 
-r = 0
+x.penup()
 
 for step in range(6):
-    x.setheading(r)
+    x.goto(-260, 10)
+    x.setheading(step * 60)
+    x.forward(40)        # distance from center
+    x.pendown()
+    x.fillcolor("#43DF3E")
+    x.begin_fill()
     x.circle(60)
-    r = r + 60
-x.end_fill()
+    x.end_fill()
+    x.penup()
 
 # a cup on tree leaves
 x.penup()
@@ -241,6 +241,7 @@ if answer == "no":
 
 wn = trtl.Screen()
 wn.mainloop()
+
 
 
 
