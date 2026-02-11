@@ -185,7 +185,7 @@ for step in range(50):
            collision_shape = turtle_shapes.pop() if turtle_shapes else "classic"
            collision_color = "yellow"
 
-# ask user if they want to add details
+# ask user if they want to add details to the tree
 user_name = input("What is your name? ")
 print("Hi", user_name)
 answer = input("Would you like to add some details to the tree? State 'yes' or 'no'. ")
@@ -241,5 +241,6 @@ if answer == "no":
 
 wn = trtl.Screen()
 wn.mainloop()
+
 
 
