@@ -1,1 +1,1 @@
-An AP CSP project displaying a house, tree, and Sun.
+An avid learner trying to learn Python.
